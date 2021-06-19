@@ -1,0 +1,776 @@
+* body {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color:rgb(255, 255, 255);
+  display:flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:0.8em;
+}
+
+/************************************ HEADER ************************************/
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100px;
+  background-color:#5B191A;
+}
+
+a{
+  font-size:1em;
+  text-decoration:none;
+  color:white;
+}
+
+#logo{
+  width:200px;
+  margin-left:40px;
+}
+
+#banner{
+  width:350px;
+  margin-right:40px;
+}
+
+
+/************************************ NAVIGATION ************************************/
+
+nav {
+  height:50px;
+  background-color: rgb(0, 0, 0);
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  padding-left:20px;
+  margin-bottom:30px;
+}
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+nav ul li > a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color:white;
+    font-size:1.3em;
+  }
+
+  a:hover{
+    color:#FE8646;
+  }
+
+  .active{
+    color:#FE8646;
+  }
+  
+/************************************ MAIN CONTAINER ************************************/
+
+#container{
+  margin-top:20px;
+  margin:0 auto;
+  width:900px;
+}
+
+#date{
+  display:block;
+  font-size:1.2em;
+  float:right;
+  margin-bottom:30px;
+  margin-right:20px; 
+}
+
+/************************************ NEWS CONTAINER ************************************/
+
+#news-container{
+  padding:0px;
+  margin:auto;
+  margin-top:40px;
+  justify-content:center;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap :30px;
+  clear:both;
+}
+
+.news-headline{
+  display:inline-block;
+  margin-top:18px;
+  margin-left:20px;
+  font-weight: bold; 
+  font-size:1.2em;  
+}
+.news-text{
+  display:block;
+  padding:10px; 
+  text-align:center; 
+  font-size:1em
+}
+
+#eins{
+  background-color: #C4C4C4;
+  grid-column: 1/7;
+  grid-row: 1/2;
+} 
+
+#zwei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/3;
+  grid-row: 2/3; 
+}
+
+#drei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+#vier{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 5/7;
+  grid-row: 2/3;   
+}
+
+#fuenf{
+  background-color: #C4C4C4;
+  grid-column: 1/7;
+  grid-row: 3/4; 
+}
+#sechs{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+#sieben{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 3/5;
+  grid-row: 4/5;  
+}
+
+#acht{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 5/7;
+  grid-row: 4/5; 
+} 
+img{
+  width:100%;
+}
+
+/************************************ DVELOPER CONTAINER ************************************/
+
+#developer-container{
+  padding:0px;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:30px;
+  justify-content:center;
+  display:grid;
+  grid-template-columns: 80px 80px 80px 10px 10px 80px 80px 80px ;
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap :30px;
+}
+
+.dev-text{
+  display:block;
+  padding:20px;
+  text-align:center; 
+  font-size:1.1em;
+}
+
+#d-eins{
+  background-color: #C4C4C4;
+  grid-column: 2/9;
+  grid-row: 1/2;
+} 
+
+#d-zwei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/4;
+  grid-row: 2/6; 
+}
+
+#d-drei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 6/9;
+  grid-row: 2/6;
+}
+
+#d-vier{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/4;
+  grid-row: 6/8;   
+}
+
+#d-fuenf{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 6/9;
+  grid-row: 6/8;
+}
+
+#d-fuenf img{
+  height: 70%;
+}
+
+/************************************ FOOTER ************************************/
+
+footer{
+  display:flex;
+  align-content:space-between;
+  flex-wrap: wrap;
+  width:100%;
+  height:100px;
+  margin: 0 auto;
+  padding-bottom:30px;
+  background-color:black;
+  min-width:900px;
+}
+
+footer > nav {
+  background-color: rgb(0, 0, 0);
+  color:white;
+  margin-right:240px;
+  margin-top:20px;
+}
+
+footer > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+footer > li {
+   display: inline-block; 
+}
+
+footer > a {
+    display: block;
+    text-decoration: none;
+    color:white; 
+  }
+#bottom-logo{
+  display:block; 
+  padding-top:25px;
+}
+
+#Markus{
+  color:white;
+  margin-left:290px;
+  margin-top:-20px;
+  font-size:1.5em;
+}
+
+/********************************* Media Queries ********************************/
+
+
+
+
+/***********************************/
+/************* TABLETS *************/  
+
+@media screen and (min-width: 481px) and (max-width: 850px) {
+  #container{
+    margin-top:20px;
+    margin:0 auto;
+    width:700px;
+  }
+
+  /************************************ HEADER ************************************/
+
+  header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    background-color:#5B191A;
+  }
+
+  #logo{
+    width:200px;
+    
+  }
+
+  #banner{
+  display:none;
+  }
+  
+  #date{
+    display:none;
+  }
+  /************************************ NEWS CONTAINER ************************************/
+
+#news-container{
+  padding:0px;
+  margin:auto;
+  margin-top:40px;
+  justify-content:center;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px ;
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap :30px;
+
+}
+
+.news-headline{
+  display:inline-block;
+  margin-top:18px;
+  margin-left:20px;
+  font-weight: bold; 
+  font-size:1.2em;  
+}
+.news-text{
+  display:block;
+  padding:10px; 
+  text-align:center; 
+  font-size:1em
+}
+
+#eins{
+  background-color: #C4C4C4;
+  grid-column: 1/5;
+  grid-row: 1/2;
+} 
+
+#zwei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/3;
+  grid-row: 2/3; 
+}
+
+#drei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+#vier{
+  display:none;  
+}
+
+#fuenf{
+  background-color: #C4C4C4;
+  grid-column: 1/5;
+  grid-row: 3/4; 
+}
+#sechs{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+#sieben{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 3/5;
+  grid-row: 4/5;  
+}
+
+#acht{
+  display:none;  
+} 
+img{
+  width:100%;
+}
+
+/************************************ DVELOPER CONTAINER ************************************/
+
+#developer-container{
+  padding:0px;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:30px;
+  justify-content:center;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px ;
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap :30px;
+}
+
+.dev-text{
+  display:block;
+  padding:20px;
+  text-align:center; 
+  font-size:1.1em;
+}
+
+#d-eins{
+display:none;
+} 
+
+#d-zwei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/3;
+  grid-row: 1/3; 
+}
+
+#d-drei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+
+#d-vier{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/3;
+  grid-row: 3/5;   
+}
+
+#d-fuenf{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 3/5;
+  grid-row: 3/5;
+}
+
+#d-fuenf img{
+  height: 65%;
+}
+
+}
+
+footer{
+  display:flex;
+  align-content:space-between;
+  flex-wrap: wrap;
+  width:100%;
+  height:100px;
+  margin: 0 auto;
+  padding-bottom:30px;
+  background-color:black;
+  min-width:700px;
+}
+
+footer > nav {
+  background-color: rgb(0, 0, 0);
+  color:white;
+  margin-right:120px;
+  margin-top:20px;
+}
+
+footer > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+footer > li {
+   display: inline-block; 
+}
+
+footer > a {
+    display: block;
+    text-decoration: none;
+    color:white; 
+  }
+#bottom-logo{
+  display:block; 
+  padding-top:-10px;
+  width:25%;
+}
+
+#Markus{
+  color:white;
+  margin-left:240px;
+  margin-top:-20px;
+  font-size:1.1em;
+}
+
+/***********************************/
+/************* SCREEN *************/ 
+
+@media screen and (min-width: 851px) and (max-width: 3800px) {
+
+  #logo{
+    width:200px;
+    margin-left:40px;
+  }
+  
+  #banner{
+    width:350px;
+    margin-right:40px;
+  }
+
+  footer{
+    display:flex;
+    align-content:space-between;
+    flex-wrap: wrap;
+    width:100%;
+    height:100px;
+    margin: 0 auto;
+    padding-bottom:30px;
+    background-color:black;
+    min-width:900px;
+  }
+  
+  footer > nav {
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-right:270px;
+    margin-top:20px;
+  }
+  
+  footer > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+  footer > li {
+     display: inline-block; 
+  }
+  
+  footer > a {
+      display: block;
+      text-decoration: none;
+      color:white; 
+    }
+  #bottom-logo{
+    display:block; 
+    padding-top:20px;
+  }
+  
+  #Markus{
+    color:white;
+    margin-left:290px;
+    margin-top:-20px;
+    font-size:1.5em;
+  }
+
+  #container{
+    margin-top:20px;
+    margin:0 auto;
+    width:900px;
+  }
+
+}
+
+/***********************************/
+/************* PHONES *************/
+
+@media screen and (max-width: 480px) {
+  body{
+    width:480px;
+  }
+
+  #banner{
+    display:none;
+  }
+  nav {
+    padding-left:40px;
+    margin-top:0px;
+    order:2;
+  }
+  #logo{
+    padding-left:80px;
+  }
+  footer{
+    flex-direction:column;
+    justify-content: flex-start;
+    padding: 0px;
+    height:260px;
+  }
+
+  #bottom-logo{
+    display:block; 
+    order:1; 
+    width:200px;
+    margin-top: 20px;
+    margin-left: 120px;
+  }
+
+  #Markus{
+    color:rgb(255, 255, 255);
+    font-size:1em;
+    order:3;
+    margin-bottom:0px;
+    color:white;
+    margin-left:120px;
+    margin-top:10px;
+  }
+
+/************************************ MAIN CONTAINER ************************************/
+
+#container{
+
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   min-width: 480px;
+   width: 100%;
+}
+
+#date{
+  display:none; 
+}
+
+  /******************* NEWS CONTAINER ******************/
+
+#news-container{
+  padding:0px;
+  margin:auto;
+  margin-top:0px;
+  justify-content:start;
+  display:grid;
+  grid-template-columns: 300px;
+  grid-auto-rows: minmax(50px, auto);
+  width:300px;
+  padding-left:0px;
+  margin-left:70px;
+}
+
+.news-headline{
+  display:inline-block;
+  margin-top:18px;
+  margin-left:20px;
+  font-weight: bold; 
+  font-size:1.2em;  
+}
+.news-text{
+  display:block;
+  padding:10px; 
+  text-align:center; 
+  font-size:1em
+}
+
+#eins{
+  background-color: #C4C4C4;
+  text-align:center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+} 
+
+#zwei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/2;
+  grid-row: 2/5; 
+}
+
+#drei{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/2;
+  grid-row: 5/7;
+}
+
+#vier{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/2;
+  grid-row: 7/9;   
+}
+
+#fuenf{
+  background-color: #C4C4C4;
+  text-align:center;
+  grid-column: 1/2;
+  grid-row: 9/10; 
+}
+#sechs{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/2;
+  grid-row: 10/12;
+}
+
+#sieben{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/2;
+  grid-row: 12/15;  
+}
+
+#acht{
+  background-color: rgb(0, 0, 0);
+  color:white;
+  grid-column: 1/2;
+  grid-row: 15/18; 
+} 
+img{
+  width:100%;
+}
+
+/*************** DVELOPER CONTAINER ******************/
+  #developer-container{
+    padding:0px;
+    margin:70px;
+    margin-bottom: 35px;
+    margin-top:35px;
+    justify-content:start;
+    display:grid;
+    grid-template-columns: 300px ;
+    grid-auto-rows: minmax(50px, auto);
+    width:300px;
+  }
+  
+  .dev-text{
+    display:block;
+    padding:20px;
+    text-align:center; 
+    font-size:1.1em;
+  }
+  
+  #d-eins{
+   display:none;
+  } 
+  
+  #d-zwei{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    grid-column: 1/2;
+    grid-row: 1/3; 
+  }
+  
+  #d-drei{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  
+  #d-vier{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    grid-column: 1/2;
+    grid-row: 5/7;   
+  }
+  
+  #d-fuenf{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    grid-column: 1/2;
+    grid-row: 7/9;
+  }
+  
+  #d-fuenf img{
+    height: 70%;
+  }
+  
+}
+
+
+
+

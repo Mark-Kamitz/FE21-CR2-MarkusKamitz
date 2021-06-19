@@ -1,0 +1,21 @@
+/* breakpoint map */
+$bp : (
+    'mobile' : 600px,
+    'tablet' : 800px,
+    'desktop' : 1440px,
+);
+
+/* function for setting the  breakpoint */
+
+@mixin bp($screen)  // creates the function named 'bp' 
+    {  
+    @each $key, $value in $bp // for each key | value pair in $bp 
+        {                     
+        @if ($screen == $key in $bp)  // if $creen matches a $key in $bp
+            {
+            @media(max-width: $value) // set @media rule 
+                {@content;} // and write it into css if you @include 'bp'      
+            }
+        }
+    }
+    
