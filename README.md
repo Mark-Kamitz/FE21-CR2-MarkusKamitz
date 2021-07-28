@@ -1,7 +1,7 @@
 # FE21-CR2-MarkusKamitz
 Second Code Review | 18.06.2021
 
-For this CodeReview, the following criteria were graded:
+**For this CodeReview, the following criteria were graded:**
 
 * Create a GitHub Repository named: FE21-CR2-YourName. Push the files into it and send the link through the learning management system (lms). See an example of a GitHub link below: https://github.com/JohnDoe/repositoryname.git
 
@@ -21,7 +21,7 @@ For this CodeReview, the following criteria were graded:
 
 * The banner (How to become a developer) must be linked to the https://www.codefactory.wien URL 
 
-Bonus Points:
+**Bonus Points:**
 
 * Use SASS/SCSS tools to style your site
 
