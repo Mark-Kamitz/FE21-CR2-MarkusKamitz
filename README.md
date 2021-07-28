@@ -1,5 +1,5 @@
 # FE21-CR2-MarkusKamitz
-
+Second Code Review | 18.06.2021
 
 For this CodeReview, the following criteria were graded:
 
@@ -24,5 +24,7 @@ For this CodeReview, the following criteria were graded:
 Bonus Points:
 
 * Use SASS/SCSS tools to style your site
+
 * Add links to the menu that lead to other local HTML pages that you will additionally create for these bonus points and you are free to provide your design/layout solutions for these additional pages.
+
 * Create a Media Query for tablets. For this option, as the tablet resolution is wider, two(2) columns should be able to fit in the screen
